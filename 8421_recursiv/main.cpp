@@ -4,9 +4,9 @@ void b2(int x, int& i) { // acest subprogram este asemanator celui transformarii
     // insa il impart de 3 ori la 2 chiar daca catul va da 0 intre timp
     // pentru a-l putea reprezenta apoi prin inmultirea bitilor cu puterile lui 2 (b8 * 8 + b4 * 4 + b2 * 2 + b1 * 1)
     ++i; // i reprezinta numarul de repetitii ale subprogramului
-    if (i > 4) return; // daca programul s-a repetat de mai mult de 4 ori se opreste
+    if (i > 4) return; // daca subprogramul s-a repetat de mai mult de 4 ori se opreste
 
-    b2(x / 2, i); // apelez programul din nou transmitand numarul de repetitii
+    b2(x / 2, i); // apelez subprogramul din nou transmitand numarul de repetitii
     // prin var. i si impartind numarul x la 2 pentru a obtine noul rest
 
     std::cout << x % 2; // afisez numarul reprezentat in codul 8421 in ordine inversa
